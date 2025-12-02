@@ -1,10 +1,4 @@
-# 7-Eleven Follow-up Session: AWS API Gateway to Postman Spec Hub Integration
-
-**Date**: October 31, 2025  
-**Duration**: 60 minutes  
-**Objective**: Complete the end-to-end workflow to sync AWS API Gateway specs with Postman using Node.js scripts, avoiding previous curl/authentication issues.
-
----
+# AWS API Gateway to Postman Spec Hub Integration
 
 ## Phase 1: Introduction & Goal Setting (0-5 minutes)
 
@@ -44,7 +38,7 @@ Confirm connectivity and credentials upfront to prevent common errors during the
 **Option 1: Using environment variables** (recommended for production/shared use):
 ```bash
 # Navigate to project directory
-cd /path/to/711-demo-walkthrough
+cd /path/to/dir
 
 # Set environment variables from .env file (if using dotenv) or export manually
 export POSTMAN_API_KEY="your-postman-api-key-here"
