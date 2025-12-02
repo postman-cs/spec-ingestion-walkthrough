@@ -69,18 +69,6 @@ node scripts/spec_sync.js \
   --poll
 ```
 
-### Example (7-Eleven basket API)
-```bash
-node scripts/spec_sync.js \
-  --domain retail \
-  --service basket \
-  --stage dev \
-  --openapi openapi.json \
-  --file-path index.json \
-  --state-file state/postman-ingestion-state.json \
-  --poll
-```
-
 ### All Available Flags
 | Flag | Required | Description |
 |------|----------|-------------|
@@ -109,16 +97,6 @@ node scripts/environments_upsert.js \
   --service <service> \
   --stage <stage> \
   --region <region> \
-  --openapi openapi.json
-```
-
-### Example (7-Eleven basket API)
-```bash
-node scripts/environments_upsert.js \
-  --domain retail \
-  --service basket \
-  --stage dev \
-  --region us-east-1 \
   --openapi openapi.json
 ```
 
