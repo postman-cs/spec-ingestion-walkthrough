@@ -4,7 +4,7 @@
 
 ### Recap
 In our last session on October 29, we successfully:
-- Identified that 7-Eleven uses AWS API Gateway v2 (HTTP APIs) for Lambda-backed services
+- Identified that uses AWS API Gateway v2 (HTTP APIs) for Lambda-backed services
 - Exported an OpenAPI spec from the basket API using AWS CLI
 - Created a test workspace in Postman
 - Generated a Postman API key
@@ -140,18 +140,6 @@ node scripts/spec_sync.js \
   --poll
 ```
 
-**For 7-Eleven basket API**:
-```bash
-node scripts/spec_sync.js \
-  --domain retail \
-  --service basket \
-  --stage dev \
-  --openapi openapi.json \
-  --file-path index.json \
-  --state-file state/postman-ingestion-state.json \
-  --poll
-```
-
 **What This Does**:
 1. Reads the OpenAPI spec from `openapi.json`
 2. Creates or resolves a Spec in Postman with name: `[retail] basket #api`
@@ -234,16 +222,6 @@ node scripts/environments_upsert.js \
   --service <service> \
   --stage <stage> \
   --region <region> \
-  --openapi openapi.json
-```
-
-**For 7-Eleven basket API**:
-```bash
-node scripts/environments_upsert.js \
-  --domain retail \
-  --service basket \
-  --stage dev \
-  --region us-east-1 \
   --openapi openapi.json
 ```
 
