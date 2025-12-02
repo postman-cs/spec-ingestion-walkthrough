@@ -2,19 +2,8 @@
 
 ## Phase 1: Introduction & Goal Setting (0-5 minutes)
 
-### Recap
-In our last session on October 29, we successfully:
-- Identified that uses AWS API Gateway v2 (HTTP APIs) for Lambda-backed services
-- Exported an OpenAPI spec from the basket API using AWS CLI
-- Created a test workspace in Postman
-- Generated a Postman API key
-
-We encountered challenges with:
-- Manual curl commands causing encoding errors
-- 403 authentication errors when calling Postman API
-
 ### Today's Objective
-"We will complete the end-to-end workflow using two Node.js scripts (`spec_sync.js` and `environments_upsert.js`) to sync your AWS API Gateway spec with Postman, generate a collection, and create a corresponding environment."
+"We'll complete the end-to-end workflow using two Node.js scripts (`spec_sync.js` and `environments_upsert.js`) to sync AWS API Gateway spec with Postman, generate a collection, and create a corresponding environment."
 
 ### What We'll Accomplish
 1. Validate all prerequisites (AWS CLI, Postman API, Node.js)
@@ -472,31 +461,3 @@ node scripts/environments_upsert.js \
 - [AWS API Gateway v2 Export API](https://docs.aws.amazon.com/apigatewayv2/latest/api-reference/apis-apiid.html#ExportApi)
 - [OpenAPI 3.0 Specification](https://spec.openapis.org/oas/v3.0.0)
 - [GitHub Actions OIDC with AWS](https://docs.github.com/en/actions/deployment/security-hardening-your-deployments/configuring-openid-connect-in-amazon-web-services)
-
----
-
-## Session Checklist
-
-Pre-session:
-- [ ] AWS CLI configured and authenticated
-- [ ] Postman API key generated
-- [ ] Node.js v18+ installed
-- [ ] Scripts directory available
-- [ ] Test workspace created in Postman
-
-During session:
-- [ ] Validated AWS credentials
-- [ ] Validated Postman API key
-- [ ] Exported OpenAPI spec from API Gateway
-- [ ] Uploaded spec to Postman Spec Hub
-- [ ] Generated collection from spec
-- [ ] Synced collection with spec
-- [ ] Created Postman environment
-- [ ] Validated all assets in Postman UI
-
-Post-session:
-- [ ] Document API parameters (ID, stage, region)
-- [ ] Revoke and regenerate Postman API key
-- [ ] Plan GitHub Actions automation
-- [ ] Identify next APIs to onboard
-
