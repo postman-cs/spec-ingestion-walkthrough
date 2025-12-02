@@ -49,12 +49,12 @@ node scripts/environments_upsert.js \
 ## Documentation
 
 ### For Today's Session
-- **[session_walkthrough.md](./session_walkthrough.md)** - Complete 60-minute walkthrough for 7-Eleven follow-up session
+- **[session_walkthrough.md](./session_walkthrough.md)** - Complete 60-minute walkthrough
 - **[quick_reference.md](./quick_reference.md)** - One-page cheat sheet with all commands and troubleshooting
 
 ### Planning & Architecture
 - **[POSTMAN_OAS_INGESTION_PROPOSAL.md](./POSTMAN_OAS_INGESTION_PROPOSAL.md)** - Full automation proposal and architecture
-- **[manual_validation.md](./manual_validation.md)** - POC steps with lessons learned from 7-Eleven session
+- **[manual_validation.md](./manual_validation.md)** - POC steps
 
 ### Scripts
 - **[scripts/spec_sync.js](./scripts/spec_sync.js)** - Syncs OpenAPI specs to Postman Spec Hub and collections
@@ -121,8 +121,6 @@ Today's workflow is manual but uses scripts for reliability. Each API update req
 - Syncs to Postman
 - Updates environments
 - Posts links to specs/collections in deployment notifications
-
-See [POSTMAN_OAS_INGESTION_PROPOSAL.md](./POSTMAN_OAS_INGESTION_PROPOSAL.md) for complete automation architecture.
 
 ## Troubleshooting
 
