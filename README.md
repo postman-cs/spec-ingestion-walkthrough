@@ -97,12 +97,7 @@ node scripts/environments_upsert.js \
 - `--poll` flag waits for sync task completion
 - Validates sync succeeded before proceeding
 
-## Lessons Learned (7-Eleven Session - Oct 29, 2025)
-
-### What Worked
-- AWS API Gateway v2 (HTTP API) export via AWS CLI
-- Postman workspace creation and API key generation
-- Identifying correct API Gateway types
+## Lessons Learned 
 
 ### Challenges
 - Manual curl commands caused encoding and 403 authentication errors
